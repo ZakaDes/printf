@@ -9,6 +9,7 @@
 int _printf(const char *format, ...);
 
 int putch(char c);
+int put(char *c);
 
 
 #endif
