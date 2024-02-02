@@ -10,6 +10,9 @@ int _printf(const char *format, ...)
 
 	int i = 0, count = 0, strc;
 
+	if (!format || (format[0] == '%' && format[1] == '\0'))
+		return (-1);
+
 	va_start(arg, format);
 
 	for (; format[i] != '\0'; i++)
